@@ -5,4 +5,7 @@ project(DRILL_PROJECT CXX)
 
 include_directories(inc)
 
-add_executable(drill src/main.cpp)
+add_executable(drill
+    src/main.cpp
+    src/Drill.cpp
+)
