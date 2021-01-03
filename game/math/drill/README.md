@@ -1,6 +1,8 @@
 # drill
 
-Arithmetic drills
+Version: `0.0.0`
+
+Arithmetic drills with variable difficulty.
 
 ## License
 
