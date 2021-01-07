@@ -6,4 +6,4 @@ Version: `0.0.0`
 
 Copyright (C) 2021 Robert Coffey
 
-This is private software.
+All rights reserved.
