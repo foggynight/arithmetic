@@ -1,9 +1,9 @@
-# homeschool
+# drill
 
-Homeschooling games and curriculum
+Version: `0.0.0`
 
 ## License
 
 Copyright (C) 2021 Robert Coffey
 
-This is private software.
+All rights reserved.
