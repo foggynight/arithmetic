@@ -1,14 +1,13 @@
-;; --- drill ---
+;; --- arithmetic.cl ---
 ;;
-;; Arithmetic drills at the command line.
+;; Arithmetic drills at the command line
 ;;
-;; For my son.
-;; You're not here yet, and I can't wait to meet you.
-;; Love you bud.
-;;                                   Dad - 2021-01-07
+;; For my son
+;; You're not here yet, and I can't wait to meet you
+;; Love you bud
+;;                                  Dad - 2021-01-07
 ;;
 ;; Copyright (C) 2021 Robert Coffey
-;; All rights reserved
 
 (defun get-random-op ()
   (nth (random 4) '(+ - * /)))
