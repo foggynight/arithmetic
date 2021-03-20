@@ -8,7 +8,7 @@
 ;;                                  Dad - 2021-01-07
 ;;
 ;; Copyright (C) 2021 Robert Coffey
-;; Released under the GPLv2 license
+;; All rights reserved
 
 (defun get-random-op ()
   (nth (random 4) '(+ - * /)))
