@@ -10,12 +10,23 @@
 ;; Copyright (C) 2021 Robert Coffey
 ;; All rights reserved
 
+(setf *random-state* (make-random-state t))
+
 (defun get-random-op ()
   (nth (random 4) '(+ - * /)))
 
 (defun gen-expr ()
   (let ((x (random 10))
         (y (random 10)))
-    (let ((expr (list (get-random-op) x y)))
-      (print expr)
-      (print (eval expr)))))
+    (list (get-random-op) x y)))
+
+(defun main ()
+  (let ((expr (gen-expr)))
+    (write-string "Expression: ")
+    (prin1 expr)
+    (terpri)
+    (write-string "Result:     ")
+    (prin1 (eval expr))
+    (terpri)))
+
+(main)
