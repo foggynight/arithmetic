@@ -1,4 +1,4 @@
-;; --- arithmetic.cl ---
+;; *** arithmetic ***
 ;;
 ;; Arithmetic drills at the command line
 ;;
