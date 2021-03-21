@@ -20,12 +20,10 @@
 
 (defun print-drill (expr)
   (fresh-line)
-  (princ (cadr expr))
-  (princ " ")
-  (princ (car expr))
-  (princ " ")
-  (princ (caddr expr))
-  (write-string " = ")
+  (format T "~d ~a ~d = "
+          (cadr expr)
+          (car expr)
+          (caddr expr))
   (finish-output))
 
 (defun check-result (expr input)
