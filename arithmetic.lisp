@@ -15,10 +15,11 @@
 (defun get-random-op ()
   (nth (random 4) '(+ - * /)))
 
+;; TODO Prevent division by zero
 (defun gen-expr ()
   (list (get-random-op) (random 10) (random 10)))
 
-(defun print-drill (expr)
+(defun print-expr-infix (expr)
   (fresh-line)
   (format T "~d ~a ~d = "
           (cadr expr)
@@ -26,13 +27,13 @@
           (caddr expr))
   (finish-output))
 
-(defun check-result (expr input)
-  (equal (eval expr) input))
+(defun check-result (expr result)
+  (equal (eval expr) result))
 
 (defun main ()
   (let ((score 0)
         (expr (gen-expr)))
-    (print-drill expr)
+    (print-expr-infix expr)
     (prin1 (check-result expr (read)))
     (terpri)))
 
