@@ -15,9 +15,10 @@
 (defun get-random-op ()
   (nth (random 4) '(+ - * /)))
 
-;; TODO Prevent division by zero
 (defun gen-expr ()
-  (list (get-random-op) (random 10) (random 10)))
+  (list (get-random-op)
+        (random 10)
+        (min (+ (random 10) 1) 9)))
 
 (defun print-expr-infix (expr)
   (fresh-line)
