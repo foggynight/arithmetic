@@ -49,6 +49,7 @@
     (terpri)
     (format T "Final score: ~d/~d"
             score
-            expr-count)))
+            expr-count)
+    (terpri)))
 
 (main)
