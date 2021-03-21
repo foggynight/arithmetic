@@ -29,7 +29,7 @@
   (finish-output))
 
 (defun check-result (expr input)
-  (eq (eval expr) input))
+  (equal (eval expr) input))
 
 (defun main ()
   (let ((score 0)
