@@ -1,7 +1,6 @@
 #!/usr/bin/env -S sbcl --script
 
-;;;
-;; --- arithmetic.lisp ---
+;;; --- arithmetic.lisp ---
 ;;
 ;; Arithmetic drills at the command line
 ;;
@@ -12,7 +11,6 @@
 ;;
 ;; Copyright (C) 2021 Robert Coffey
 ;; All rights reserved
-;;;
 
 (setq *random-state* (make-random-state t))
 
