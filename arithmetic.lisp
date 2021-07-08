@@ -1,17 +1,5 @@
 #!/usr/bin/env -S sbcl --script
 
-;;; --- arithmetic.lisp ---
-;;
-;; Arithmetic drills at the command line
-;;
-;; For my son
-;; You're not here yet, and I can't wait to meet you
-;; Love you bud
-;;                                  Dad - 2021-01-07
-;;
-;; Copyright (C) 2021 Robert Coffey
-;; All rights reserved
-
 (setq *random-state* (make-random-state t))
 
 (defun get-expr-count ()
