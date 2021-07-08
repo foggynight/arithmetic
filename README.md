@@ -1,6 +1,9 @@
 # arithmetic
 
+## Description
+
 Arithmetic drills at the command line
+
 
 ## License
 
